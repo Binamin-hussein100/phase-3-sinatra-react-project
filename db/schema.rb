@@ -12,14 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2022_09_21_075259) do
 
-  create_table "baby_names", force: :cascade do |t|
-    t.string "name"
-    t.string "gender"
-    t.string "origin"
-    t.text "meaning"
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "babynames", force: :cascade do |t|
+  create_table "baby_names", force: :cascade do |t|
     t.string "name"
     t.string "gender"
     t.string "origin"

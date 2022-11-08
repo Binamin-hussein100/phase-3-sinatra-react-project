@@ -1,5 +1,7 @@
 default: &default
   adapter: postgresql
+  username: binamin
+  password: <%= ENV['PASSWORD'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -14,7 +16,5 @@ test:
 production:
   <<: *default
   database: abujani
-  username: mayhem
-  password: <%= ENV['RAILS_SOKO_PASSWORD'] %>
 
 

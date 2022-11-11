@@ -1,20 +1,18 @@
-default: &default
-  adapter: postgresql
-  username: binamin
-  password: <%= ENV['PASSWORD'] %>
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
-  <<: *default
-  database: abujani
-
-test:
-  <<: *default
-  database: abujani
+  adapter: postgresql
+  encoding: unicode
+  database: d6aog6gfn18or0
+  pool: 5
+  username: ccbghcddarjhrs
+  password: 944168d5510ecce2b9885e7fc18e56eb02e37e5399772c056ff83ddfca1e1010
+  host: ec2-35-170-21-76.compute-1.amazonaws.com
 
 production:
-  <<: *default
-  database: abujani
-
-
+  adapter: postgresql
+  encoding: unicode
+  database: d6aog6gfn18or0
+  pool: 5
+  username: ccbghcddarjhrs
+  password: 944168d5510ecce2b9885e7fc18e56eb02e37e5399772c056ff83ddfca1e1010
+  host: ec2-35-170-21-76.compute-1.amazonaws.com

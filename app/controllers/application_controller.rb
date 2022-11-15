@@ -1,5 +1,5 @@
 class ApplicationController < Sinatra::Base
-  
+  set :default_content_type, 'application/json'
   # # Add your routes here
   # get "/" do
   #   { message: "Good luck with you" }.to_json
@@ -14,12 +14,25 @@ class ApplicationController < Sinatra::Base
   # GET 
   get "/baby_names/:id" do
     name = BabyName.find(params[:id])
+    puts 'name'
     game.to_json
   end
 
   # POST 
   post "/baby_names" do
     name = BabyName.create(
+      name: params[:name],
+      gender: params[:gender],
+      origin: params[:origin],
+      meaning: params[:meaning],
+    )
+    name.to_json
+  end
+
+  #update
+  puts "/baby_names/:id" do
+    name= BabyName.find(params[:id])
+    name.update(
       name: params[:name],
       gender: params[:gender],
       origin: params[:origin],

@@ -1,5 +1,5 @@
 current directory: /home/binamin/Documents/Flatiron/phase_3/Project/phase-3-sinatra-react-project/vendor/bundle/ruby/2.7.0/gems/pg-1.4.4/ext
-/home/binamin/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/binamin/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20221111-15948-1mz35rg.rb extconf.rb
+/home/binamin/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/binamin/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20221114-16209-1b6xwfk.rb extconf.rb
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /usr/bin/pg_config
@@ -54,5 +54,5 @@ linking shared-object pg_ext.so
 
 current directory: /home/binamin/Documents/Flatiron/phase_3/Project/phase-3-sinatra-react-project/vendor/bundle/ruby/2.7.0/gems/pg-1.4.4/ext
 make "DESTDIR=" install
-/usr/bin/install -m 0755 pg_ext.so ./.gem.20221111-15948-1n6f4ok
+/usr/bin/install -m 0755 pg_ext.so ./.gem.20221114-16209-yinbel
 installing pg_ext libraries
